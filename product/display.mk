@@ -12,9 +12,9 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_AAPT_PREBUILT_DPI := hdpi
 PRODUCT_PROPERTY_OVERRIDES += debug.hwui.use_buffer_age=false
 
-# Ambient display
+# Device-specific Settings
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    XiaomiParts
 
 # Display
 PRODUCT_PACKAGES += \
