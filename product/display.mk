@@ -47,29 +47,38 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-0.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_0_3.xml
 
-# Properties
+# Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=1 \
+    debug.egl.hw=0 \
     debug.enable.sglscale=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     debug.mdpcomp.logs=0 \
-    debug.sdm.support_writeback=0 \
-    debug.sf.hw=1 \
+    debug.sf.hw=0 \
+    debug.sf.disable_hwc_vds=1 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
-    persist.debug.wfd.enable=1 \
     persist.demo.hdmirotationlock=false \
     persist.hwc.enable_vds=1 \
-    persist.hwc.mdpcomp.enable=true \
     persist.sys.wfd.virtual=0 \
-    ro.opengles.version=196610 \
-    ro.qualcomm.cabl=0 \
+    persist.debug.wfd.enable=1 \
+    ro.opengles.version=196608 \
+    ro.vendor.display.cabl=2 \
+    ro.qualcomm.svi=0 \
     ro.sf.lcd_density=320 \
+    persist.hwc.mdpcomp.enable=true \
+    sys.display-size=3840x2160 \
     sdm.debug.disable_rotator_split=1 \
-    vendor.disable_skip_validate=1 \
+    sdm.debug.disable_skip_validate=1 \
+    sdm.debug.rotator_downscale=1 \
     sdm.perf_hint_window=50 \
-    sys.display-size=3840x2160
+    vendor.display.disable_skip_validate=1 \
+    debug.sdm.support_writeback=0 \
+    debug.hwui.use_buffer_age=false \
+    vendor.display.perf_hint_window=50 \
+    persist.graphics.vulkan.disable=true \
+    debug.composition.type=gpu \
+    vendor.display.enable_default_color_mode=1
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
