@@ -22,7 +22,7 @@ $(shell rm -rf vendor/qcom/opensource/power)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay-pa
 
 # Include device-specific product fragments
 include $(DEVICE_PATH)/product/*.mk
