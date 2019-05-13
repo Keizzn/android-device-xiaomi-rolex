@@ -48,6 +48,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
     libcnefeatureconfig \
     librmnetctl \
     libxml2
@@ -70,9 +72,6 @@ PRODUCT_PACKAGES += \
     telephony-ext \
     qti-telephony-common \
     ims-ext-common
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Whitelisted app
 PRODUCT_COPY_FILES += \
