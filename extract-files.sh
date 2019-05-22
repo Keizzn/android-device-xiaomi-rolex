@@ -60,8 +60,6 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
-"$MY_DIR"/setup-makefiles.sh
-
 # Define blobs path for the following hax
 BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
@@ -80,3 +78,5 @@ sed -i "s|EGL_KHR_gl_colorspace|DIS_ABL_ED_colorspace|g" $BLOB_ROOT/vendor/lib/e
 sed -i "s|EGL_KHR_gl_colorspace|DIS_ABL_ED_colorspace|g" $BLOB_ROOT/vendor/lib64/egl/eglSubDriverAndroid.so
 sed -i "s|EGL_KHR_gl_colorspace|DIS_ABL_ED_colorspace|g" $BLOB_ROOT/vendor/lib64/egl/eglsubAndroid.so
 sed -i "s|EGL_KHR_gl_colorspace|DIS_ABL_ED_colorspace|g" $BLOB_ROOT/vendor/lib64/egl/libRBEGL_adreno.so
+
+"$MY_DIR"/setup-makefiles.sh
