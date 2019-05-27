@@ -78,4 +78,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.playback.conc.disabled=true \
     vendor.voice.record.conc.disabled=false \
     vendor.voice.voip.conc.disabled=true \
-    vendor.voice.conc.fallbackpath=deep-buffer
+    vendor.voice.conc.fallbackpath=deep-buffer \
+    persist.audio.dirac.speaker=true
