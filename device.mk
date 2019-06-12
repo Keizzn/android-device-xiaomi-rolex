@@ -16,6 +16,9 @@
 
 DEVICE_PATH := $(LOCAL_PATH)
 
+# Hack for remove stuffs
+$(shell rm -rf hardware/qcom/power)
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
