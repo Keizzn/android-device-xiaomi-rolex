@@ -49,11 +49,13 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=0 \
-    debug.enable.sglscale=1 \
+    debug.egl.hw=1 \
+    debug.cpurend.vsync=false \
+    debug.sf.disable_backpressure=1 \
+    debug.gralloc.gfx_ubwc_disable=0 \
     vendor.gralloc.enable_fb_ubwc=1 \
     debug.mdpcomp.logs=0 \
-    debug.sf.hw=0 \
+    debug.sf.hw=1 \
     debug.sf.disable_hwc_vds=1 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.recomputecrop=0 \
