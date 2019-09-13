@@ -25,13 +25,13 @@ PRODUCT_PACKAGES += \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    camera.display.umax=1920x1080 \
-    camera.display.lmax=1280x720 \
-    vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk,com.whatsapp \
+    persist.vendor.camera.display.umax=1920x1080 \
+    persist.vendor.camera.display.lmax=1280x720 \
+    persist.vendor.qti.telephony.vt_cam_interface=1 \
     media.camera.ts.monotonic=1 \
     persist.camera.gyro.android=1 \
     persist.camera.HAL3.enabled=1 \
     persist.camera.eis.enable=1 \
     persist.camera.is_type=1 \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
-    vidc.enc.narrow.searchrange=1
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android,com.snapchat.android \
+    vidc.enc.dcvs.extra-buff-count=2
