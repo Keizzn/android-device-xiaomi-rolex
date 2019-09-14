@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=196608 \
+    ro.vendor.display.cabl=2 \
+    ro.sf.lcd_density=320 \
+    vendor.display.enable_default_color_mode=1 \
     debug.egl.hw=1 \
     debug.cpurend.vsync=false \
     debug.gralloc.gfx_ubwc_disable=0 \
